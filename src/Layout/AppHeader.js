@@ -1,22 +1,22 @@
-import AppsIcon from '@mui/icons-material/Apps';
+// import AppsIcon from '@mui/icons-material/Apps';
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoEllipsisHorizontalSharp } from "react-icons/io5";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-import PersonIcon from '@mui/icons-material/Person';
-import SettingsIcon from '@mui/icons-material/Settings';
-import LogoutIcon from '@mui/icons-material/Logout';
-import Popover from '@mui/material/Popover';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faListCheck, faDna, faTicket, faDisplay } from '@fortawesome/free-solid-svg-icons';
-import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+// import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+// import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+// import PersonIcon from '@mui/icons-material/Person';
+// import SettingsIcon from '@mui/icons-material/Settings';
+// import LogoutIcon from '@mui/icons-material/Logout';
+// import Popover from '@mui/material/Popover';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBars, faListCheck, faDna, faTicket, faDisplay } from '@fortawesome/free-solid-svg-icons';
+// import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
+import {  useState } from 'react';
 // import { http } from '../Utils/api';
-import { ImageSizeVariants, getImageFromDrive } from '../Utils/Services/drive'
-import { eFileModule } from '../Utils/constants';
-import { APPID, ProjectUrl } from '../Utils/Config/envConfig';
-import { _api, _getAccountAPI } from '../Utils/Config/axiosConfig';
-import { faPaste } from '@fortawesome/free-regular-svg-icons';
+// import { ImageSizeVariants, getImageFromDrive } from '../Utils/Services/drive'
+// import { eFileModule } from '../Utils/constants';
+// import { APPID, ProjectUrl } from '../Utils/Config/envConfig';
+// import { _api, _getAccountAPI } from '../Utils/Config/axiosConfig';
+// import { faPaste } from '@fortawesome/free-regular-svg-icons';
 
 export default function AppHeader() {
   /**Helpers */

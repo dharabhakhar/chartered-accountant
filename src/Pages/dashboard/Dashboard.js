@@ -12,6 +12,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     document.title = 'N D Bhakhar & Co';
+    setShowPageLoader(false)
   }, []);
 
   return (
