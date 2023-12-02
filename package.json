@@ -1,0 +1,77 @@
+{
+  "name": "active_reports",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.17",
+    "@mui/icons-material": "^5.14.8",
+    "@mui/lab": "^5.0.0-alpha.148",
+    "@mui/material": "^5.14.5",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "@mui/x-data-grid": "^6.11.2",
+    "@mui/x-date-pickers": "^6.16.2",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@tanstack/react-table": "^8.9.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
+    "axios": "^1.5.0",
+    "date-fns": "^2.30.0",
+    "dayjs": "^1.11.10",
+    "formik": "^2.4.4",
+    "grapesjs": "^0.21.4",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "luxon": "^3.4.3",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-date-range": "^1.4.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-loader-spinner": "^5.4.5",
+    "react-redux": "^8.1.2",
+    "react-resizable-panels": "^0.0.54",
+    "react-router-dom": "^6.19.0",
+    "react-scripts": "5.0.1",
+    "react-tooltip": "^5.21.1",
+    "styled-components": "^5.3.11",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "set PORT=3002 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(192, 192, 192);
+  border-radius: 6px;
+}
+
+.gallery-sec::-webkit-scrollbar-thumb {
+  background: #0000002b;
+  border-radius: 6px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  outline: none;
+}
+
+
+.table_head_input::placeholder {
+  font-weight: 500;
+  color: black
+}
+
+.table_cell_input::placeholder {
+  font-weight: 400;
+  color: black
+}
+
+
+/* th,td {
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+
+/* Let's highlight canvas boundaries */
+#gjs {
+  border: 3px solid #444;
+}
+
+/* Reset some default styling */
+.gjs-cv-canvas {
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.resize-cursor {
+  cursor: col-resize;
+  /* or row-resize for a vertical resize cursor */
+  pointer-events: none;
+  /* Disable mouse events on the element */
+}
+
+.element:hover {
+  /* box-shadow: 0 0 2px #1d1d1d; 
+transition: .3s; */
+
+
+}
+
+td input:focus {
+  box-shadow: 0 0 -6px green;
+
+}
+
+* {
+  image-rendering: pixelated;
+
+}
+
+img {
+
+  -webkit-user-drag: none;
+  /* Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Edge */
+  user-select: none;
+}
+
+
+/* textarea {
+  display: block;
+  width: 180px;
+  white-space: nowrap;
+word-break: break-all;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border: none;
+  resize: auto;
+  height: auto;
+} */
+
+.app-card {
+  background-image: radial-gradient(at 50% 100%, #a1c9e6 3%, #bee8ed 100%), linear-gradient(to bottom, rgba(255, 255, 255, .25) 0%, rgba(0, 0, 0, .25) 100%);
+  background-blend-mode: screen, overlay;
+  cursor: pointer;
+}
+
+.app-card:hover {
+  box-shadow: #00000026 0 5px 10px;
+}
+
+.pl-0{
+  padding-right: 0px;
+}
+
+.pl-\[14px\]{
+  padding-right: 20px;
+}
+
+@media (max-width: 414px) {
+  .left-sidebar .form-setting{
+    width: 168px;
+  }
+}
+
+.css-1ajovle-MuiPaper-root-MuiAlert-root .MuiAlert-icon, .css-gqw0zq-MuiPaper-root-MuiAlert-root .MuiAlert-icon {
+  color: #FFFFFF !important;
+}
+.css-1b7y7h7-MuiPaper-root-MuiAlert-root .MuiAlert-icon, .css-106zui3-MuiPaper-root-MuiAlert-root .MuiAlert-icon{
+  color: #FFFFFF !important;
+}
+
+.navelement_cont {
+  position: relative;
+}
+
+.bg-gradient-to-r.navelement_cont::before {
+  border-top: 7px solid #259dab;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 14px;
+  top: 44px;
+
+}
+
+.navelement,
+.navelement-active {
+  border-left: 1px solid #dbdfe6
+}
+
+.navelement:hover .dot {
+  border-color: #657390;
+
+}
+
+.dot-ani::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: -3px;
+  top: 50%;
+  background-color: #9fa8bc;
+  margin-top: -3px;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+
+.navelement:hover .dot-ani::before {
+  background-color: #657390;
+}
+
+.dot-ani::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 1px solid #a0a8b9;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  margin-top: -15px;
+  border-radius: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+
+.navelement:hover .dot-ani::after {
+  opacity: 1;
+  border-color: #657390;
+  width: 11px;
+  height: 11px;
+  left: -6px;
+  margin-top: -6px;
+}
+
+
+.navelement-active .dot1 .dot-ani::before {
+  background-color: #259dab;
+}
+
+.navelement-active .dot1 .dot-ani::after {
+  border-color: #259dab;
+  opacity: 1;
+  width: 11px;
+  height: 11px;
+  left: -6px;
+  margin-top: -6px;
+}

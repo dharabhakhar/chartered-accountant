@@ -1,0 +1,32 @@
+name: Deploy to IIS Production
+
+on:
+  workflow_dispatch:
+          
+jobs:
+  deploy:
+    runs-on: [self-hosted, zibma-s2]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Angular project
+        run: npm run build --prod
+
+      - name: Publish to IIS
+        run: |
+
+          $sourcePath = "${{ github.workspace }}\dist\zibma.account.angular\*"
+          $destinationPath = "C:\Zibma\SchoolSite\OnlineSite\Zibma.MS.Production\Frontend\Backup"
+
+          Remove-Item $destinationPath\* -Recurse -Force
+          Copy-Item -Path $sourcePath -Destination $destinationPath -Recurse -Force

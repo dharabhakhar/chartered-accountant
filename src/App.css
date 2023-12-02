@@ -1,0 +1,224 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.organizationListOpened .MuiPopover-paper {
+  left: 0px!important;
+}
+#orgaizationDropdown .MuiPaper-root, .appsOpened .MuiPopover-paper, .profileOpened .MuiPaper-root {
+  border-radius: 0!important;
+  top: 50px!important;
+}
+
+.date-picker .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-error{
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.date-picker .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline{
+  border-color: rgba(0, 0, 0, 0.23) !important;
+}
+
+/* header */
+.sub1-header {
+  display: none;
+}
+
+.sub-header:hover .sub1-header {
+  display: block !important;
+}
+.underline-effect {
+  content: "";
+  position: absolute;
+  bottom: 13px;
+  left: 0%;
+  width: 0;
+  height: 1px;
+  background-color: #6fb7c2;
+  transition: width 0.3s ease-in-out;
+}
+
+.head:hover .underline-effect {
+  width: 100%;
+}
+
+.mobile-header{
+  transition: 9s;
+}
+
+/* Dashboard */
+
+.box{
+  display: inline-block;
+  position: relative;
+  border: rgba(255, 255, 255, 0.434) 1px solid;
+  color: #fff;
+  cursor: pointer;
+}
+.box a{
+  display: block;
+  /* padding: 25px 80px; */
+}
+.box::before, .box::after{
+  content:"";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #63fefe;
+  transition-delay: 0s;
+}
+
+.box a::before, .box a::after{
+  content:"";
+  width:1px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+  transition-delay: 0.2s;
+}
+.box::before{
+  right: 0;
+  top: 0;
+}
+.box::after{
+  left: 0;
+  bottom: 0;
+}
+.box a::before{
+  left: 0;
+  top: 0;
+}
+.box a::after{
+  right: 0;
+  bottom: 0;
+}
+
+.box:hover::before, .box:hover::after{
+  width: 100%; 
+  transition-delay: 0.2s;
+}
+.box:hover a::before, .box:hover a::after{
+  height: 100%;
+  transition-delay: 0s;
+}
+
+.form-md { 
+  width: 100%; 
+  /* text-align: center;  */
+  margin: 32px 0 32px 0; 
+}
+.form-group {
+  margin-bottom: 16px;
+  position: relative;
+}
+input, textarea {
+  position: relative;
+  display: block;
+  width: 380px;
+  border-bottom: 1px solid rgba(0,0,0,.37);
+  background-color: transparent;
+  margin: 0px;
+  padding: 6px 4px 4px 14px;
+  height: 40px;
+  outline: none !important;
+  font-size: 16px;
+  color: rgba(0,0,0,0.85);
+  transition: all .2s ease-in-out;
+}
+
+label {
+  position: absolute;
+  top: 14px; 
+  left: 12px;
+  text-align: left;
+  display: inline-block;
+  padding: 0 0px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  /* background: #A3DFDD; */
+  color: rgba(0,0,0,0.5);
+  margin: 0px auto;
+  cursor: text;
+  transition: all .15s ease-in-out;
+}
+input:hover, textarea:hover, input:focus, textarea:focus { border-bottom: 1px solid #000; }
+
+input:valid + label, input:focus + label, textarea:valid + label, textarea:focus + label { 
+  top: -6px;
+  color: #000;
+  font-weight: bold;
+}
+.gl-form-asterisk {
+    background-color: inherit;
+    color: #e32b2b;
+    padding: 0;
+    padding-left: 3px;
+   
+}
+.gl-form-asterisk:after {
+    content: "*";
+}
+
+.box1{
+  border-color: #000 !important;
+  background-color: #102D2B;
+  width: 200px;
+}
+
+.service-bg{
+  background-image: url('Images/bg.jpg');
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.service-layer{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000cf;
+}
+.service-layer p{
+  padding: 76px 186px;
+}
